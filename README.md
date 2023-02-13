@@ -22,7 +22,7 @@ Configurações do H2:
 
 Aplicação está porta 8081;
 
-Caminho para acessar no browser(URL) = localhost:8081/h2 ;
+Caminho para acessar no H2 browser(URL) = localhost:8081/h2 ;
 
 Caminho para acessar no browser(URL) os endpoints = localhost:8081/pessoas
 
