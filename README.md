@@ -242,11 +242,12 @@ Retorna erro 400 do tipo Bad Request e a mensagem:
 
 A pessoa só pode adicionar um endereço por vez;
 
+
+### Endpoint: PUT /pessoas/{id}
+
 Modificar uma pessoa por ID
 
 Modifica uma pessoa existente, identificada pelo seu ID.Porém não modica o endereço, modifica apenas os dados da pessoa.
-
-### Endpoint: PUT /pessoas/{id}
 
 Resposta de sucesso: 200 OK
 
@@ -311,6 +312,54 @@ Mensagem de sucesso:
 Pessoa deletada com sucesso!
 
 ### Enpoint do Endereço:
+
+### Endpoint: GET /pessoas/{id}/enderecos
+
+Resposta de sucesso: 200 OK
+
+Resposta de erro: 400 Bad Request
+
+Retorna todos os endereços da pessoa.
+
+Resposta de sucesso:
+
+[
+
+    {
+    
+        
+        "enderecoId": 1,
+        
+        "logradouro": "Rua dos Batistas",
+        
+        "cep": "88450-123",
+        
+        "numero": 186,
+        
+        "isPrincipal": false,
+        
+        "cidade": "Ubatuba"
+    },
+    
+    {
+        
+        "enderecoId": 2,
+        
+        "logradouro": "Rua dos Pereira",
+        
+        "cep": "88450-123",
+        
+        "numero": 186,
+        
+        "isPrincipal": true,
+        
+        "cidade": "Ubatuba"
+    
+    }
+
+
+
+
 
 ### Endpoint: GET /pessoas/{id}/endereco-principal
 
@@ -439,3 +488,4 @@ Obs:. Não será alterar isPrincipal para false, sem antes alterar um dos outros
 Resposta de erro:
 
 Não é possivel modificar endereço, pois é necessário que pelo menos um endereço seja principal
+
