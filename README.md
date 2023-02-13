@@ -5,7 +5,7 @@ Esta é a documentação da API de Pessoa, responsável por gerenciar as informa
 
 Observação: Todas as respostas e requições são feitas utilizando JSON, e para utilizá-las no Postman será necessário identá-las removendo os espaços, pois, foi necessário adicionar espaços para identar todas as requisições e resposta neste README.md
 
-## Tecnologías utilizadas neste projeto:
+## Tecnologias utilizadas neste projeto:
 - Java 11 - Versão do SDK utilizado neste projeto;
 - Spring Web - Contém um servidor Tomcat embutido;
 - Spring Data JPA - Faz a persistência de dados em um Banco Relacional;
